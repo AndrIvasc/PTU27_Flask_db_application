@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Projekta duonmenu ivedimas</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
 <h4>Iveskite nauja projekta</h4>
 <form action="/projektas/naujas" method="post">
     <p>Projekto pavadinimas</p>
@@ -14,5 +9,4 @@
     <p><input type="text" name="kainalaukelis"></p>
     <p><input type="submit" value="issaugoti"></p>
 </form>
-</body>
-</html>
+{% endblock %}

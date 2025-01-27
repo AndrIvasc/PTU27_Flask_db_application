@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ project.pavadinimas }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
     <p>{{ project.pavadinimas }}</p>
     <p>id {{ project.id }}</p>
     <p>Kaina {{ project.kaina }}</p>
     <p>PVM {{ project.kaina_su_pvm }}</p>
     <p>Sukurimo data{{ project.sukurimo_data }}</p>
-</body>
-</html>
+{% endblock %}

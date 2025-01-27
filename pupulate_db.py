@@ -1,5 +1,5 @@
 from models import Projektas, db
-from app01 import app
+from app import app
 
 with app.app_context():
     projects =  [

@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ project.pavadinimas }}</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
 <h4>Projekto {{ project.pavadinimas }} redagavimas</h4>
 <form action="" method="post">
     <p>Project pavadinimas</p>
@@ -14,5 +10,4 @@
     <p>Projekto kaina</p>
     <p><input type="submit" value="Save"></p>
 </form>
-</body>
-</html>
+{% endblock %}
