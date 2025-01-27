@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projektas CRUD app</title>
+</head>
+<body>
+<h4>Projektu lentele</h4>
+{% for project_row in projects %}
+<p>{{ project_row }}</p>
+{% endfor %}
+
+{% if not projects %}
+<p>Kolkas projektu nera in db</p>
+{% endif %}
+</body>
+</html>
